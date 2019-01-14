@@ -6,7 +6,7 @@
     "one": "./bin/one.js"
   },
   "scripts": {
-    "serve": "pm2 restart ./server/index.js && vue-cli-service serve",
+    "serve": "pm2 startOrRestart ./server/index.js && vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
