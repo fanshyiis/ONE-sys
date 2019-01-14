@@ -1,0 +1,57 @@
+{
+  "name": "one-sys",
+  "version": "0.1.0",
+  "private": true,
+  "bin": {
+    "one": "./bin/one.js"
+  },
+  "scripts": {
+    "serve": "pm2 restart ./server/index.js && vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "config-lite": "^2.0.0",
+    "countup": "^1.8.2",
+    "ejs": "^2.5.6",
+    "element-ui": "^2.4.11",
+    "figlet": "^1.2.1",
+    "koa": "^2.3.0",
+    "koa-body": "^4.0.6",
+    "koa-bodyparser": "^4.2.0",
+    "koa-mysql-session": "^0.0.2",
+    "koa-router": "^7.2.1",
+    "koa-session-minimal": "^3.0.4",
+    "koa-static": "^4.0.0",
+    "koa-static-cache": "^5.1.1",
+    "koa-views": "^6.0.2",
+    "koa2-cors": "^2.0.6",
+    "md5": "^2.2.1",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "supervisor": "^0.12.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/babel-preset-app": "^3.0.0-alpha.1",
+    "@vue/cli-plugin-babel": "^3.1.2",
+    "@vue/cli-plugin-eslint": "^3.1.2",
+    "@vue/cli-service": "^3.1.2",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "mocha": "^4.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

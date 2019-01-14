@@ -1,0 +1,16 @@
+{
+    apps : [
+        {
+            name      : "one-sys",
+            max_memory_restart: "300M",
+            script    : "./server/index.js",
+            out_file : "./server/log/pm2_out.log",
+            error_file : "./server/log/pm2_error.log",
+            instances  : 1,
+            exec_mode  : "cluster",
+            env: {
+                NODE_ENV: "production"
+            }
+        }
+    ]
+}
